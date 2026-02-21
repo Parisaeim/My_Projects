@@ -93,5 +93,4 @@ Extract LSB from those positions
 Pack bits back to bytes
 Reshape to original secret image
 
-
-
+PARISA IMANI
