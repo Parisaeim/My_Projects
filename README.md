@@ -1,3 +1,27 @@
+********Time Series Anomaly Detection using LSTM Autoencoder**********
+This project implements Anomaly Detection on Time Series Data using an LSTM Autoencoder built with TensorFlow/Keras.
+The model is trained to reconstruct normal weather patterns (temperature and pressure).
+Anomalies are detected based on reconstruction error.
+
+Project Pipeline:
+Data preprocessing and feature selection
+Scaling numerical features
+Creating sliding window sequences
+Building LSTM Autoencoder (Encoder-Decoder architecture)
+Training with EarlyStopping
+Calculating reconstruction error (MAE)
+Setting anomaly threshold (99th percentile)
+Visualizing detected anomalies over time
+
+Model Architecture:
+Encoder: LSTM(32)
+Latent Representation
+RepeatVector
+Decoder: LSTM(32)
+TimeDistributed Dense Output
+
+Results:The model successfully identifies abnormal temperature patterns based on reconstruction error exceeding the defined threshold.  
+
 *****Real-Time Smile Detection using CNN and OpenCV*****
 
 This project implements a real-time smile detection system using a Convolutional Neural Network (CNN) built with TensorFlow/Keras and OpenCV for face detection.
